@@ -60,6 +60,7 @@ func (tel *TelnetController) NewInput(data []byte) {
 		Key map for the input key byte and the control
 		bit in Gameboy register.
 	*/
+	/* TODO: Keymap in json config file */
 	keyDataMap := map[byte]int{
 		65:  2,
 		66:  3,
@@ -67,7 +68,7 @@ func (tel *TelnetController) NewInput(data []byte) {
 		67:  0,
 		10:  7,
 		8:   6,
-		122: 5,
+		121: 5,
 		120: 4,
 		0:   7,
 	}
